@@ -16,30 +16,40 @@
 
 
 <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script.js"></script>
     <header class="site-header">
         <div class="container">
             <div class="logo">
-                <img class=blank src="./Images/logo.png">
+                <a href="#intro">
+                    <img class=blank src="./Images/logo.png">
+                </a>
             </div>
             <div class="buttons">
                 <div class="button-container">
                     <h6>
-                        <a href="">About Us</a>
+                        <a href="#about-us">About Us</a>
                     </h6>
                 </div>
                 <div class="button-container">
                     <h6>
-                        <a href="">Projects</a>
+                        <a href="#projects">Projects</a>
                     </h6>
                 </div>
                 <div class="button-container">
                     <h6>
-                        <a href="">Contact Us</a>
+                        <a href="#sponsors">Sponsors</a>
+                    </h6>
+                </div>
+
+                <div class="button-container">
+                    <h6>
+                        <a href="#how-you-help">FAQ</a>
                     </h6>
                 </div>
                 <div class="button-container">
                     <h6>
-                        <a href="">Sponsors</a>
+                        <a href="#contact">Contact Us</a>
                     </h6>
                 </div>
 
@@ -47,12 +57,14 @@
         </div>
     </header>
     <div class=donate>
-        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-            Support Us
-        </button>
+        <a href="#contact">
+            <button href="#contact" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                Support Us
+            </button>
+        </a>
     </div>
 
-    <div class="intro">
+    <div id="intro">
         <div class="jumbotron">
             <div class="hero">
                 <div class="hero-image">
@@ -62,9 +74,11 @@
                     <h1> Help Foundation</h1>
                     <h4>you can put some text here</h4>
                     <div class="buttons">
-                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
-                            Contact Us
-                        </button>
+                        <a href="#contact">
+                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+                                Contact Us
+                            </button>
+                        </a>
                     </div>
 
 
@@ -72,12 +86,12 @@
             </div>
 
         </div>
-        <div class="about-us">
+        <div id="about-us">
             <h1>About Us</h1>
         </div>
     </div>
 
-    <div class="projects">
+    <div id="projects">
         <div class="information">
             <h1>Projects</h1>
             <h4> Text can go here</h4>
@@ -122,7 +136,7 @@
 
     </div>
 
-    <div class="sponsors">
+    <div id="sponsors">
         <div class=sponsor-container>
             <h1>Become a Sponsor</h1>
             <h3>Text here (contact email as well)</h3>
@@ -154,15 +168,15 @@
         </div>
     </div>
 
-    <div class="how-you-help">
+    <div id="how-you-help">
         <h1>How You can Help/FAQ AREA (currently under construction)</h1>
     </div>
 
-    <div class="contact">
+    <div id="contact">
         <div class="row">
             <div>
                 <h1>Donate/Contact</h1>
-                <div class = container>
+                <div class=c ontainer>
                     <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">donate</button>
                     <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Contact</button>
                 </div>
@@ -171,7 +185,15 @@
         </div>
     </div>
 
-    <footer></footer>
+    <footer class="mdl-mini-footer">
+        <div class="mdl-mini-footer__left-section">
+            <div class="mdl-logo">Title</div>
+            <ul class="mdl-mini-footer__link-list">
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Privacy & Terms</a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 
 </html>

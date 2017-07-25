@@ -101,7 +101,6 @@ h6 > a:hover:before {
     transform: scaleX(1);
 }
 
-.intro {}
 
 .jumbotron {
     height: 100vh;
@@ -137,17 +136,15 @@ h6 > a:hover:before {
     top: 70vh;
 }
 
-.about-us {
+#about-us {
     height: 50vh;
     background-color: #607d8b;
-}
 
-.about-us {
     padding: 100px;
     text-align: center;
 }
 
-.projects .mdl-cell {
+#projects .mdl-cell {
     height: 450px;
 }
 
@@ -173,10 +170,7 @@ h6 > a:hover:before {
     padding-bottom: 50px;
 }
 
-.how-you-help {
-    height: 50vh;
-    background-color: white;
-}
+
 
 .sponsor-container {
     text-align: center;
@@ -245,7 +239,7 @@ h6 > a:hover:before {
     padding: 30px 0;
 }
 
-.contact {
+#contact {
     height: 600px;
     background: url(http://via.placeholder.com/750x350);
     background-size: cover;
@@ -253,7 +247,7 @@ h6 > a:hover:before {
     background-position: center;
 }
 
-.contact .row {
+#contact .row {
     background: rgba(39, 62, 84, 0.50);
     overflow: hidden;
     height: 100%;
@@ -263,23 +257,31 @@ h6 > a:hover:before {
     align-items: center;
 }
 
-.contact .row h1{
+#contact .row h1{
     text-align: center;
     color: white;
     text-shadow: 2px 2px #03a9f4;
 }
 
-.contact .row .container{
+#contact .row .container{
     display: flex;
     align-content: space-between;
     justify-content: center;
 }
 
-.contact .row button{
+#contact .row button{
     margin: 10px;
     height: 60px;
     width: 200px;
 }
-h1{
+#how-you-help {
+    height: 50vh;
+    background-color: white;
+}
+#how-you-help h1{
     text-align: center;
+}
+
+.mdl-mini-footer{
+    background-color: #607d8b;
 }
