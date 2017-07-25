@@ -145,7 +145,7 @@ h6 > a:hover:before {
 }
 
 #projects .mdl-cell {
-    height: 450px;
+    height: 37vh;
 }
 
 .project-image {
@@ -193,6 +193,10 @@ h6 > a:hover:before {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.sponsor-endorsement .container{
+    padding: 100px;
 }
 
 .sponsor-endorsement .row h4 {
