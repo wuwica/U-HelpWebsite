@@ -275,6 +275,7 @@ h6 > a:hover:before {
     width: 200px;
 }
 #how-you-help {
+    padding: 60px;
     height: 50vh;
     background-color: white;
 }
