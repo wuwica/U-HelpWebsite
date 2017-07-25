@@ -8,7 +8,6 @@ body {
     object-fit: cover;
 }
 
-
 .container {
     width: 100%;
     max-width: 1440px;
@@ -45,15 +44,15 @@ body {
     align-items: center;
 }
 
-.hero-content .buttons{
-    height:100px;
+.hero-content .buttons {
+    height: 100px;
     justify-content: center;
 }
 
 .logo {
     padding: 0 32px;
-    width:70px;
-    height:100px;
+    width: 70px;
+    height: 100px;
 }
 
 .logo img {
@@ -61,94 +60,89 @@ body {
     width: 100%;
 }
 
-.blank{
+.blank {
     background-color: #03a9f4;
     padding: 10px;
     box-shadow: 0 5px 3px rgba(0, 0, 0, 0.35);
 }
 
-
 .button-container {
-    
     padding: 0 32px;
 }
 
 h6 > a {
-  position: relative;
-  color: #000;
-  text-decoration: none;
-
+    position: relative;
+    color: #000;
+    text-decoration: none;
 }
 
 h6 > a:hover {
-  color: #000;
+    color: #000;
 }
 
 h6 > a:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #000;
-  visibility: hidden;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transition: all 0.2s ease-in-out 0s;
-  transition: all 0.2s ease-in-out 0s;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    transition: all 0.2s ease-in-out 0s;
 }
 
 h6 > a:hover:before {
-  visibility: visible;
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
 }
 
-.intro {
-}
+.intro {}
 
-.jumbotron{
+.jumbotron {
     height: 100vh;
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
-.hero-image{
+
+.hero-image {
     width: 300px;
     height 300px;
 }
 
-.hero-image img{
+.hero-image img {
     height: 100%;
     width: 100%;
 }
 
-.hero{
+.hero {
     display: flex;
     max-width: 1440px;
-    width:100%;
+    width: 100%;
     justify-content: center;
 }
 
-.hero-content{
+.hero-content {
     padding: 50px;
-    
 }
 
-.donate{
-
+.donate {
     position: fixed;
     right: 0;
     top: 70vh;
 }
 
-.about-us{
+.about-us {
     height: 50vh;
     background-color: #607d8b;
 }
 
-.about-us{
+.about-us {
     padding: 100px;
     text-align: center;
 }
@@ -156,23 +150,136 @@ h6 > a:hover:before {
 .projects .mdl-cell {
     height: 450px;
 }
-.project-image{
+
+.project-image {
     height: 100%;
     width: 50%;
 }
 
-.project-text{
-    
+.project-text {
     width: 50%;
     height: 100%;
-    background-color:  #03a9f4;
+    background-color: #03a9f4;
 }
 
-.project-module{
+.project-module {
     height: 100%;
     display: flex;
 }
 
-.information{
+.information {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.how-you-help {
+    height: 50vh;
+    background-color: white;
+}
+
+.sponsor-container {
+    text-align: center;
+    padding: 40px;
+}
+
+.sponsor-endorsement {
     height: 400px;
+    background: url(http://via.placeholder.com/750x350);
+    background-size: cover;
+    background-color: #374146;
+    background-position: center;
+}
+
+.sponsor-endorsement .row {
+    background: rgba(39, 62, 84, 0.50);
+    overflow: hidden;
+    height: 100%;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sponsor-endorsement .row h4 {
+    color: aliceblue;
+}
+
+.img-circle {
+    float: left;
+    border-radius: 50%;
+}
+
+.sponsor-name {
+    float: left;
+    padding-left: 1em;
+}
+
+.sponsor-name h6 {
+    color: aliceblue;
+    margin: 0px;
+}
+
+.sponsor-name h4 {
+    margin: 0px;
+    margin-top: 17px;
+    margin-bottom: 5px;
+    color: aliceblue;
+}
+
+.sponsor-list {
+    display: flex;
+    padding: 50px 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.sponsor-list .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-between;
+}
+
+.sponsor-list .container img {
+    padding: 30px 0;
+}
+
+.contact {
+    height: 600px;
+    background: url(http://via.placeholder.com/750x350);
+    background-size: cover;
+    background-color: #374146;
+    background-position: center;
+}
+
+.contact .row {
+    background: rgba(39, 62, 84, 0.50);
+    overflow: hidden;
+    height: 100%;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .row h1{
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px #03a9f4;
+}
+
+.contact .row .container{
+    display: flex;
+    align-content: space-between;
+    justify-content: center;
+}
+
+.contact .row button{
+    margin: 10px;
+    height: 60px;
+    width: 200px;
+}
+h1{
+    text-align: center;
 }
