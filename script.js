@@ -1,4 +1,12 @@
 $(document).ready(function () { // Select all links with hashes
+    $("h2")
+        .wrapInner("<span>")
+
+    $("h2 br")
+        .before("<span class='spacer'>")
+        .after("<span class='spacer'>");
+
+    
     $('a[href*="#"]')
         // Remove links that don't actually link to anything
         .not('[href="#"]')

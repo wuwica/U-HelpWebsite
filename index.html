@@ -5,13 +5,14 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>Template</title>
+    <title>U-Help Foundation</title>
 
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-light_blue.min.css" />
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.green-amber.min.css" />
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Ubuntu" rel="stylesheet">
 </head>
 
 
@@ -47,11 +48,6 @@
                         <a href="#how-you-help">FAQ</a>
                     </h6>
                 </div>
-                <div class="button-container">
-                    <h6>
-                        <a href="#contact">Contact Us</a>
-                    </h6>
-                </div>
 
             </div>
         </div>
@@ -59,12 +55,15 @@
     <div class=donate>
         <a href="#contact">
             <button href="#contact" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-                Support Us
+                <div id=flexbutton> Support us<img class=flexbutton-image src="Images/heart.png"></div>
             </button>
         </a>
     </div>
 
     <div id="intro">
+        <div id=backdrop>
+            <img class=cover src="Images/backdrop.png">
+        </div>
         <div class="jumbotron">
             <div class="hero">
                 <div class="hero-image">
@@ -75,7 +74,7 @@
                     <h4>you can put some text here</h4>
                     <div class="buttons">
                         <a href="#contact">
-                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
                                 Contact Us
                             </button>
                         </a>
@@ -88,6 +87,8 @@
         </div>
         <div id="about-us">
             <h1>About Us</h1>
+            <img id="about-us-icon" src="Images/earth-day.svg">
+            <img id="about-us-icon" src="Images/family.svg">
         </div>
     </div>
 
@@ -95,7 +96,8 @@
         <div class="information">
             <h1>Projects</h1>
             <h4> Text can go here</h4>
-            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Browse all Projects</button>
+            <a href="projects.html">
+                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Browse all Projects</button></a>
         </div>
         <div class="mdl-grid">
             <div class="mdl-cell mdl-cell--12-col">
@@ -139,7 +141,7 @@
     <div id="sponsors">
         <div class=sponsor-container>
             <h1>Become a Sponsor</h1>
-            <h3>Text here (contact email as well)</h3>
+            <h4>Text here (contact email as well)</h4>
             <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Become a sponsor</button>
         </div>
         <div class="sponsor-endorsement">

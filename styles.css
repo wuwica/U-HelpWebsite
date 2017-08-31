@@ -1,7 +1,118 @@
-body {
-    background-color: #efefef;
+:root{
+    --main-colour:rgb(76, 175, 80); 
+    --shadow-colour: rgba(29,36,27,0.6);
+    --accent-colour: rgb(255,215,64);
+    --dark-colour: rgb(99,121,97);
+    --light-colour: #efefef;
+    --back-colour:rgb(219,219,218);
+    --text-colour: #000;
 }
 
+body {
+    background-color: var(--light-colour);
+}
+
+button{
+    font: bold 20px 'Ubuntu', Sans-Serif !important;
+}
+
+h1{
+    font: 4em 'Ubuntu', Sans-Serif;
+}
+
+h4{
+    font:  2em 'Lato', Sans-Serif;
+}
+
+.content .container h1 {
+    text-align: center;
+}
+
+
+.hero-content h1{
+    font: bold 5em 'Ubuntu', Sans-Serif;
+}
+.hero-content h4{
+    font: bold 2.5em 'Lato', Sans-Serif;
+}
+
+
+h6>a {
+    position: relative;
+    font: bold 1em 'Ubuntu', Sans-Serif;
+
+    color: var(--text-colour) ;
+    text-decoration: none;
+}
+
+h6>a:hover {
+    color: var(--text-colour) ;
+}
+
+h6>a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--text-colour);
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    transition: all 0.2s ease-in-out 0s;
+}
+
+h6>a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+.sponsor-endorsement .row h4 {
+    color: aliceblue;
+}
+.sponsor-name h6 {
+    color: aliceblue;
+    margin: 0px;
+}
+
+.sponsor-name h4 {
+    margin: 0px;
+    margin-top: 17px;
+    margin-bottom: 5px;
+    color: aliceblue;
+}
+
+#contact .row h1 {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px var(--main-colour) ;
+}
+
+
+#how-you-help h1 {
+    text-align: center;
+}
+
+
+
+.project-title h1{
+    
+    align-self: flex-end;
+    margin: 0;
+}
+
+
+#backdrop{
+    top:50px;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0,0,0,0.6);
+    z-index: -1;
+}
 .cover {
     width: 100%;
     height: 100%;
@@ -19,15 +130,12 @@ body {
 }
 
 .content .container {
-    background-color: #ffffff
+    background-color: var(--light-colour);
 }
 
-.content .container h1 {
-    text-align: center;
-}
 
 .site-header {
-    background-color: #607d8b;
+    background-color: var(--main-colour) ;
     height: 50px;
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.35);
     position: fixed;
@@ -43,6 +151,7 @@ body {
     display: flex;
     align-items: center;
 }
+
 
 .hero-content .buttons {
     height: 100px;
@@ -61,44 +170,13 @@ body {
 }
 
 .blank {
-    background-color: #03a9f4;
+    background-color:  var(--accent-colour) ;
     padding: 10px;
     box-shadow: 0 5px 3px rgba(0, 0, 0, 0.35);
 }
 
 .button-container {
     padding: 0 32px;
-}
-
-h6 > a {
-    position: relative;
-    color: #000;
-    text-decoration: none;
-}
-
-h6 > a:hover {
-    color: #000;
-}
-
-h6 > a:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #000;
-    visibility: hidden;
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transition: all 0.2s ease-in-out 0s;
-    transition: all 0.2s ease-in-out 0s;
-}
-
-h6 > a:hover:before {
-    visibility: visible;
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
 }
 
 
@@ -138,10 +216,14 @@ h6 > a:hover:before {
 
 #about-us {
     height: 50vh;
-    background-color: #607d8b;
-
-    padding: 100px;
+    background-color: var(--light-colour) ;
+    padding: 70px;
     text-align: center;
+}
+
+#projects{
+    background: var(--back-colour);
+    padding-bottom: 70px;
 }
 
 #projects .mdl-cell {
@@ -156,7 +238,7 @@ h6 > a:hover:before {
 .project-text {
     width: 50%;
     height: 100%;
-    background-color: #03a9f4;
+    background-color: var(--main-colour) ;
 }
 
 .project-module {
@@ -166,15 +248,15 @@ h6 > a:hover:before {
 
 .information {
     text-align: center;
-    padding-top: 100px;
+    padding-top: 70px;
     padding-bottom: 50px;
 }
 
-
-
 .sponsor-container {
     text-align: center;
-    padding: 40px;
+    padding-top: 70px;
+    padding-bottom: 40px;
+    
 }
 
 .sponsor-endorsement {
@@ -186,7 +268,7 @@ h6 > a:hover:before {
 }
 
 .sponsor-endorsement .row {
-    background: rgba(39, 62, 84, 0.50);
+    background: var(--shadow-colour) ;
     overflow: hidden;
     height: 100%;
     z-index: 2;
@@ -195,13 +277,11 @@ h6 > a:hover:before {
     align-items: center;
 }
 
-.sponsor-endorsement .container{
+.sponsor-endorsement .container {
     padding: 100px;
 }
 
-.sponsor-endorsement .row h4 {
-    color: aliceblue;
-}
+
 
 .img-circle {
     float: left;
@@ -213,17 +293,8 @@ h6 > a:hover:before {
     padding-left: 1em;
 }
 
-.sponsor-name h6 {
-    color: aliceblue;
-    margin: 0px;
-}
 
-.sponsor-name h4 {
-    margin: 0px;
-    margin-top: 17px;
-    margin-bottom: 5px;
-    color: aliceblue;
-}
+
 
 .sponsor-list {
     display: flex;
@@ -247,12 +318,21 @@ h6 > a:hover:before {
     height: 600px;
     background: url(http://via.placeholder.com/750x350);
     background-size: cover;
-    background-color: #374146;
     background-position: center;
 }
 
+.flexbutton{
+    display: flex;
+    align-content: center;
+    
+}
+
+.flexbutton-image{
+    margin-left: 4px;
+}
+
 #contact .row {
-    background: rgba(39, 62, 84, 0.50);
+    background: var(--shadow-colour) ;
     overflow: hidden;
     height: 100%;
     z-index: 2;
@@ -261,36 +341,115 @@ h6 > a:hover:before {
     align-items: center;
 }
 
-#contact .row h1{
-    text-align: center;
-    color: white;
-    text-shadow: 2px 2px #03a9f4;
-}
 
-#contact .row .container{
+#contact .row .container {
     display: flex;
     align-content: space-between;
     justify-content: center;
 }
 
-#contact .row button{
+#contact .row button {
     margin: 10px;
     height: 60px;
     width: 200px;
 }
+
 #how-you-help {
-    padding: 60px;
+    padding: 70px;
     height: 50vh;
-    background-color: white;
-}
-#how-you-help h1{
-    text-align: center;
+    background-color: var(--back-colour);
 }
 
-.mdl-mini-footer{
-    background-color: #607d8b;
+
+.mdl-mini-footer {
+    background-color: rgb(29,36,27);
 }
 
-.project-page-container{
+.project-page-container {
+    margin-top: 50px;
+}
+
+.back-project img {
+    z-index: -1;
+    position: absolute;
+    top: 50px;
+    height: 400px;
+}
+
+.project-title-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.project-title {
+    width: 80%;
+    height: 100px;
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
+    background-color: var(--light-colour);
+}
+
+
+
+.project-page-container .content {
+    display: flex;
+    padding: 50px 0;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: var(--light-colour);
+}
+
+.project-page-container .content .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-between;
+}
+
+#project-card{
+    padding: 30px 0px;
+    position: relative;
+}
+
+#project-card-animate{
+    margin:30px 0px;
+    height: 300px;
+    width: 100%;
+    position:absolute;
+    top:0;
+    background: rgba(0,0,0,.6);
+    opacity: 0;
+    transition: opacity .25s ease-in-out;
+}
+#project-card-animate:hover{
+    opacity: 1;
+}
+
+#project-card-text{
+    position: absolute;
+    top:190px;
+    left: 0;
+    width: 100%;
+}
+
+#project-card-text span { 
+   color: white; 
+   font: bold 24px/45px Helvetica, Sans-Serif; 
+   letter-spacing: -1px;  
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding: 9px; 
+}
+#project-card-text span.spacer {
+   padding:0 5px;
+   background: rgba(0, 0, 0, 0); /* fallback color */
+}
+
+#about-us-icon{
+    width:100px;
 }
