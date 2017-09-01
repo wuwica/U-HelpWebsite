@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.green-amber.min.css" />
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact.css">
     <link href="https://fonts.googleapis.com/css?family=Lato|Ubuntu" rel="stylesheet">
 </head>
 
@@ -54,8 +55,8 @@
     </header>
     <div class=donate>
         <a href="#contact">
-            <button href="#contact" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-                <div id=flexbutton> Support us<img class=flexbutton-image src="Images/heart.png"></div>
+            <button href="#contact" id="support-animation" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                <div id=flexbutton>Donate <img class=flexbutton-image src="Images/heart.png"></div>
             </button>
         </a>
     </div>
@@ -180,12 +181,37 @@
                 <h1>Donate/Contact</h1>
                 <div class=c ontainer>
                     <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">donate</button>
-                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Contact</button>
+                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent contact-toggle">Contact</button>
                 </div>
             </div>
 
         </div>
     </div>
+
+    <!-- The Modal (contains the Sign Up form) -->
+    <div id="id01" class="modal">
+        <form class="modal-content" action="/action_page.php">
+            <span class="close contact-toggle" title="Close">&times;</span>
+            <h3>Contact Us</h3>
+            <h5>Have any questions, comments or concerns? <br>We'd love to hear from you</h5>
+            <input type="text" placeholder="Name" name="name" required>
+
+            <input type="email" placeholder="Email" name="email" required>
+
+            <textarea rows="4" cols="50" placeholder="Message" name=message required></textarea>
+
+            <div class="clearfix">
+                <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Submit</button>
+            </div>
+        </form>
+    </div>
+    
+    <script>
+        $('.contact-toggle').click(function(e) {
+            $('#id01').toggleClass("active"); //you can list several class names 
+            e.preventDefault();
+        });
+    </script>
 
     <footer class="mdl-mini-footer">
         <div class="mdl-mini-footer__left-section">

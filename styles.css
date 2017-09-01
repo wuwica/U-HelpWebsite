@@ -97,14 +97,29 @@ h6>a:hover:before {
     text-align: center;
 }
 
-
+.project-title {
+    
+    background-color: var(--light-colour);
+    width: 80%;
+    height: 100px;
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
 
 .project-title h1{
-    
     align-self: flex-end;
+    position:absolute;
     margin: 0;
 }
 
+.project-title button{
+    align-self: flex-end;
+    position: absolute;
+    right: 10%
+}
 
 #backdrop{
     top:50px;
@@ -382,18 +397,6 @@ h6>a:hover:before {
     justify-content: center;
 }
 
-.project-title {
-    width: 80%;
-    height: 100px;
-    margin-top: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    background-color: var(--light-colour);
-}
-
-
 
 .project-page-container .content {
     display: flex;
@@ -453,3 +456,31 @@ h6>a:hover:before {
 #about-us-icon{
     width:100px;
 }
+
+@keyframes slideleft{
+    0% {
+        transform: translate3d(100%,0,0);
+    }
+    100% {
+        transform: translate3d(0%,0,0);
+    }
+
+}
+#support-animation{
+    
+    transform: translate3d(110%,0,0);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#support-animation.animate{
+    transform: translate3d(5%,0,0);
+}
+
+#project-text{
+    text-align: left;
+    width:70%;
+}
+
