@@ -1,4 +1,12 @@
 $(document).ready(function () { // Select all links with hashes
+    $("h2")
+        .wrapInner("<span>")
+
+    $("h2 br")
+        .before("<span class='spacer'>")
+        .after("<span class='spacer'>");
+
+
     $('a[href*="#"]')
         // Remove links that don't actually link to anything
         .not('[href="#"]')
@@ -33,5 +41,28 @@ $(document).ready(function () { // Select all links with hashes
                 }
             }
         });
-
 });
+
+$(document).scroll(function () {
+   if ($(this).scrollTop() > ($(window).height()-500)){
+        $('#support-animation').addClass('animate');
+   }else{
+        $('#support-animation').removeClass('animate');
+   }
+
+    if ($(this).scrollTop()+ $(window).height() > ($(document).height()-300)){
+        $('#support-animation').removeClass('animate');
+    }
+});
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == document.getElementById('id01')) {
+        $('#id01').toggleClass('active');
+    }
+}
+
+document.onready = function () {
+  document.querySelectorAll("input[data-required]").forEach(function (e) {
+     e.required = true;
+  });
+};
