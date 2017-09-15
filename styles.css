@@ -5,7 +5,7 @@
     --dark-colour: rgb(99,121,97);
     --light-colour: #efefef;
     --back-colour:rgb(219,219,218);
-    --text-colour: #000;
+    --text-colour: #333;
 }
 
 body {
@@ -17,11 +17,15 @@ button{
 }
 
 h1{
-    font: 4em 'Ubuntu', Sans-Serif;
+    font: bold 4em 'Ubuntu', Sans-Serif;
 }
 
 h4{
     font:  2em 'Lato', Sans-Serif;
+}
+
+.textbox h4{
+    text-align: left;
 }
 
 .content .container h1 {
@@ -33,7 +37,9 @@ h4{
     font: bold 5em 'Ubuntu', Sans-Serif;
 }
 .hero-content h4{
-    font: bold 2.5em 'Lato', Sans-Serif;
+    width: 600px;
+    font:  2.5em 'Lato', Sans-Serif;
+    color: var(--text-colour);
 }
 
 
@@ -79,6 +85,11 @@ h6>a:hover:before {
     margin: 0px;
 }
 
+#projects h4{
+    letter-spacing: 1px;
+    
+}
+
 .sponsor-name h4 {
     margin: 0px;
     margin-top: 17px;
@@ -121,9 +132,15 @@ h6>a:hover:before {
     right: 10%
 }
 
+.project-container{
+    display: flex;
+    justify-content: center;
+}
+
 #backdrop{
     top:50px;
     height: 100%;
+    width: 100%;
     position: absolute;
     background-color: rgba(0,0,0,0.6);
     z-index: -1;
@@ -204,7 +221,6 @@ h6>a:hover:before {
 
 .hero-image {
     width: 300px;
-    height 300px;
 }
 
 .hero-image img {
@@ -230,7 +246,6 @@ h6>a:hover:before {
 }
 
 #about-us {
-    height: 50vh;
     background-color: var(--light-colour) ;
     padding: 70px;
     text-align: center;
@@ -254,6 +269,8 @@ h6>a:hover:before {
     width: 50%;
     height: 100%;
     background-color: var(--main-colour) ;
+    display: flex;
+    justify-content: center
 }
 
 .project-module {
@@ -454,7 +471,7 @@ h6>a:hover:before {
 }
 
 #about-us-icon{
-    width:100px;
+    width:160px;
 }
 
 @keyframes slideleft{
@@ -484,3 +501,26 @@ h6>a:hover:before {
     width:70%;
 }
 
+.textbox{
+    width:400px;
+    margin: 50px 0px 50px 50px;
+}
+
+.about-flex{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-flex-inner{
+    display: flex;
+    
+}
+
+.about-card{
+    display:flex;
+    width: 700px;
+    justify-content: center;
+    align-items: center;
+}
