@@ -271,7 +271,6 @@ h6>a:hover:before {
     background-color: var(--main-colour) ;
     display: flex;
     justify-content: center;
-<<<<<<< HEAD
     flex-wrap: wrap;
 }
 
@@ -282,8 +281,6 @@ h6>a:hover:before {
 
 .project-text h4{
     margin: auto 10%;
-=======
->>>>>>> d924da536ed839a815af5b11261db264dbab2bac
 }
 
 .project-module {
