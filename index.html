@@ -78,8 +78,7 @@
                 </div>
                 <div class="hero-content">
                     <h1> Help Foundation</h1>
-                    <h4>“Be the change that you wish to see in the world.”
-― Mahatma Gandhi</h4>
+                    <h4>“Be the change that you wish to see in the world.” ― Mahatma Gandhi</h4>
                     <div class="buttons">
                         <a href="#contact">
                             <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
@@ -231,12 +230,10 @@ across Nicaragua.</h4>
         </div>
         <div class="sponsor-list">
             <div class="container">
+                <!-- Put images for sponsors here  eg.
+
                 <img src="http://via.placeholder.com/500x250">
-                <img src="http://via.placeholder.com/500x250">
-                <img src="http://via.placeholder.com/500x250">
-                <img src="http://via.placeholder.com/500x250">
-                <img src="http://via.placeholder.com/500x250">
-                <img src="http://via.placeholder.com/500x250">
+                -->
             </div>
         </div>
     </div>
@@ -244,13 +241,18 @@ across Nicaragua.</h4>
     <div id="how-you-help">
         <h1>How You can Help/FAQ AREA (currently under construction)</h1>
     </div>
-
     <div id="contact">
         <div class="row">
             <div>
                 <h1>Donate/Contact</h1>
-                <div class=c ontainer>
-                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">donate</button>
+
+                <div class=container>
+
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="hosted_button_id" value="E2VCU3JJJLKT6">
+                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">donate</button>
+                    </form>
                     <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent contact-toggle">Contact</button>
                 </div>
             </div>
@@ -277,7 +279,7 @@ across Nicaragua.</h4>
     </div>
 
     <script>
-        $('.contact-toggle').click(function (e) {
+        $('.contact-toggle').click(function(e) {
             $('#id01').toggleClass("active"); //you can list several class names 
             e.preventDefault();
         });
