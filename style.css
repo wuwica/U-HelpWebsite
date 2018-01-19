@@ -1,0 +1,623 @@
+<<<<<<< HEAD:styles.css
+/**
+
+Theme Name: UHelp-Foundation
+
+Theme Description: Theme created by Jonathan Wu
+
+*/
+
+:root{
+    --main-colour:rgb(76, 175, 80); 
+    --shadow-colour: rgba(29,36,27,0.6);
+    --accent-colour: rgb(255,215,64);
+    --dark-colour: rgb(99,121,97);
+=======
+:root {
+    --main-colour: rgb(76, 175, 80);
+    --shadow-colour: rgba(29, 36, 27, 0.6);
+    --accent-colour: rgb(255, 215, 64);
+    --dark-colour: rgb(99, 121, 97);
+>>>>>>> e6447e60362f602f814603bc32431753678c63f8:style.css
+    --light-colour: #efefef;
+    --back-colour: rgb(219, 219, 218);
+    --text-colour: #333;
+}
+
+body {
+    background-color: var(--light-colour);
+}
+
+button {
+    font: bold 20px 'Ubuntu', Sans-Serif !important;
+}
+
+h1 {
+    font: bold 4em 'Ubuntu', Sans-Serif;
+}
+
+h4 {
+    font: 2em 'Lato', Sans-Serif;
+}
+
+.textbox h4 {
+    text-align: left;
+}
+
+.content .container h1 {
+    text-align: center;
+}
+
+.hero-content h1 {
+    font: bold 5em 'Ubuntu', Sans-Serif;
+}
+
+.hero-content h4 {
+    width: 500px;
+    font: 2.5em 'Lato', Sans-Serif;
+    color: var(--text-colour);
+}
+
+h6>a {
+    position: relative;
+    font: 900 1.2em 'Ubuntu', Sans-Serif;
+    color: var(--text-colour);
+    text-decoration: none;
+}
+
+h6>a:hover {
+    color: var(--text-colour);
+}
+
+h6>a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--text-colour);
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    transition: all 0.2s ease-in-out 0s;
+}
+
+h6>a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.sponsor-endorsement .row h4 {
+    color: aliceblue;
+}
+
+.sponsor-name h6 {
+    color: aliceblue;
+    margin: 0px;
+}
+
+#projects h4 {
+    letter-spacing: 1px;
+}
+
+.project-text h1 {
+    margin: auto;
+    text-align: center;
+}
+
+.project-text h4 {
+    margin: auto 10%;
+}
+
+.sponsor-name h4 {
+    margin: 0px;
+    margin-top: 17px;
+    margin-bottom: 5px;
+    color: aliceblue;
+}
+
+#contact .row h1 {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px var(--main-colour);
+}
+
+#how-you-help h1 {
+    text-align: center;
+}
+
+.project-title {
+    background-color: var(--light-colour);
+    width: 80%;
+    height: 100px;
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.project-title h1 {
+    align-self: flex-end;
+    position: absolute;
+    margin: 0;
+}
+
+.project-title button {
+    align-self: flex-end;
+    position: absolute;
+    right: 10%
+}
+
+.project-container {
+    display: flex;
+    justify-content: center;
+}
+
+#backdrop {
+    top: 50px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+.cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+}
+
+.site-header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content .container {
+    background-color: var(--light-colour);
+}
+
+.site-header {
+    background-color: var(--main-colour);
+    height: 50px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.35);
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.buttons {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content .buttons {
+    height: 100px;
+    justify-content: center;
+}
+
+.logo {
+    padding: 0 32px;
+    width: 70px;
+    height: 100px;
+}
+
+.logo img {
+    height: 100%;
+    width: 100%;
+}
+
+.blank {
+    background-color: var(--accent-colour);
+    padding: 10px;
+    box-shadow: 0 5px 3px rgba(0, 0, 0, 0.35);
+}
+
+.button-container {
+    padding: 0 32px;
+}
+
+.jumbotron {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-image {
+    height: 500px;
+}
+
+.hero-image img {
+    width: auto;
+    height: 100%;
+}
+
+.hero {
+    display: flex;
+    max-width: 1440px;
+    width: 100%;
+    justify-content: center;
+}
+
+.hero-container{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 80%;
+}
+
+.hero-content {
+    padding: 50px 0px 50px 50px;
+}
+
+.donate {
+    position: fixed;
+    right: 0;
+    top: 70vh;
+}
+
+#about-us {
+    background-color: var(--light-colour);
+    padding: 70px;
+    text-align: center;
+}
+
+#projects {
+    background: var(--back-colour);
+    padding-bottom: 70px;
+}
+
+#projects .mdl-cell {
+    height: 50;
+}
+
+.project-image {
+    height: 500px;
+    width: 50%;
+}
+
+.project-text {
+    width: 50%;
+    height: 100%;
+    background-color: var(--main-colour);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project-module {
+    height: 100%;
+    display: flex;
+}
+
+.information {
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+
+.sponsor-container {
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 40px;
+}
+
+.sponsor-endorsement {
+    height: 400px;
+    background: url(https://i.gyazo.com/dda09735041fcb41dc476b8695a949a2.jpg);
+    background-size: cover;
+    background-color: #374146;
+    background-position: center;
+}
+
+.sponsor-endorsement .row {
+    background: var(--shadow-colour);
+    overflow: hidden;
+    height: 100%;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sponsor-endorsement .container {
+    padding: 100px;
+}
+
+.img-circle {
+    float: left;
+    border-radius: 50%;
+}
+
+.sponsor-name {
+    float: left;
+    padding-left: 1em;
+}
+
+.sponsor-list {
+    display: flex;
+    padding: 50px 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.sponsor-list .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-between;
+}
+
+.sponsor-list .container img {
+    padding: 30px 0;
+}
+
+#contact {
+    height: 600px;
+    background: url(/Images/larm-rmah-216854.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.flexbutton {
+    display: flex;
+    align-content: center;
+}
+
+.flexbutton-image {
+    margin-left: 4px;
+}
+
+#contact .row {
+    background: var(--shadow-colour);
+    overflow: hidden;
+    height: 100%;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact .row .container {
+    display: flex;
+    align-content: space-between;
+    justify-content: center;
+}
+
+#contact .row button {
+    margin: 10px;
+    height: 60px;
+    width: 200px;
+}
+
+#how-you-help {
+    padding: 70px;
+    height: 50vh;
+    background-color: var(--back-colour);
+}
+
+.mdl-mini-footer {
+    background-color: rgb(29, 36, 27);
+}
+
+.project-page-container {
+    margin-top: 50px;
+}
+
+.back-project img {
+    z-index: -1;
+    position: absolute;
+    top: 50px;
+    height: 400px;
+}
+
+.project-title-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.project-page-container .content {
+    display: flex;
+    padding: 50px 0;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light-colour);
+}
+
+.project-page-container .content .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-between;
+}
+
+#project-card {
+    padding: 30px 0px;
+    position: relative;
+}
+
+#project-card img {
+    height: 300px;
+    width: 500px;
+    object-fit: cover;
+}
+
+#project-card-animate {
+    margin: 30px 0px;
+    height: 300px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background: rgba(0, 0, 0, .6);
+    opacity: 0;
+    transition: opacity .25s ease-in-out;
+}
+
+#project-card-animate:hover {
+    opacity: 1;
+}
+
+#project-card-text {
+    position: absolute;
+    top: 190px;
+    left: 0;
+    width: 100%;
+}
+
+#project-card-text span {
+    color: white;
+    font: bold 24px/45px Helvetica, Sans-Serif;
+    letter-spacing: -1px;
+    background: rgb(0, 0, 0);
+    /* fallback color */
+    background: rgba(0, 0, 0, 0.7);
+    padding: 9px;
+}
+
+#project-card-text span.spacer {
+    padding: 0 5px;
+    background: rgba(0, 0, 0, 0);
+    /* fallback color */
+}
+
+#about-us-icon {
+    width: 160px;
+}
+
+@keyframes slideleft {
+    0% {
+        transform: translate3d(100%, 0, 0);
+    }
+    100% {
+        transform: translate3d(0%, 0, 0);
+    }
+}
+
+#support-animation {
+    transform: translate3d(110%, 0, 0);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#support-animation.animate {
+    transform: translate3d(5%, 0, 0);
+}
+
+#project-text {
+    text-align: left;
+    width: 70%;
+}
+
+.textbox {
+    width: 400px;
+    margin: 50px 0px 50px 50px;
+}
+
+.about-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-flex-inner {
+    display: flex;
+    width: 100%;
+}
+
+.about-card {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1439px) {
+    h1 {
+        font-size: 3em;
+    }
+    h4 {
+        font-size: 1.5em;
+    }
+    .hero-content h1 {
+        font-size: 4em;
+    }
+    .hero-content h4 {
+        font-size: 1.5em;
+        width: 100%;
+    }
+    #projects h1 {
+        font-size: 2.5em;
+    }
+    #projects h4 {
+        letter-spacing: 0px;
+    }
+    #about-us-icon {
+        width: 120px;
+    }
+    .textbox {
+        margin: 5% 0px 5% 5%;
+    }
+    .about-flex .container {
+        width: 90%;
+    }
+    .project-image {
+        height: 300px;
+        width: 50%;
+    }
+    .hero-image {
+        height: 450px;
+    }
+    
+    .button-container {
+    padding: 0 22px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    h1 {
+        font-size: 3em;
+    }
+    h4 {
+        font-size: 1.5em;
+    }
+    .hero-content h1 {
+        font-size: 3.5em;
+    }
+    .hero-content h4 {
+        font-size: 1.5em;
+        width: 100%;
+    }
+
+    .project-image {
+        height: 300px;
+        width: 50%;
+    }
+    #projects .project-text h1 {
+        font-size: 2em;
+    }
+    #projects .project-text h4 {
+        font-size: 1.3em;
+    }
+    
+    h6>a {
+        font-size: .95em;
+    }
+}
