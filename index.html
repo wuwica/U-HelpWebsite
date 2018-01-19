@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.green-amber.min.css" />
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="contact.css">
     <link href="https://fonts.googleapis.com/css?family=Lato|Ubuntu" rel="stylesheet">
 </head>
@@ -73,6 +73,7 @@
         </div>
         <div class="jumbotron">
             <div class="hero">
+                <div class ="hero-container">
                 <div class="hero-image">
                     <img src="./Images/logo-no-text.png">
                 </div>
@@ -88,6 +89,7 @@
                     </div>
 
 
+                </div>
                 </div>
             </div>
 
@@ -199,8 +201,14 @@ across Nicaragua.</h4>
     <div id="sponsors">
         <div class=sponsor-container>
             <h1>Become a Sponsor</h1>
-            <h4>Interested in becoming a sponsor? <br> The success of our organization is due in no small part to the aid of our sponsors.</h4>
-            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Help us out</button>
+
+            <div class="about-flex">
+                <div class="container">
+                    <h4>Interested in becoming a sponsor? The success of our organization is due in no small part to the aid of our sponsors. <br> We would not be able to do what we are doing without the aid of our partners.  Help us expand our reach!</h4>
+                </div>
+            </div>
+
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent contact-toggle">Help us out</button>
         </div>
         <div class="sponsor-endorsement">
             <div class="row">
@@ -267,7 +275,7 @@ across Nicaragua.</h4>
     </div>
 
     <script>
-        $('.contact-toggle').click(function(e) {
+        $('.contact-toggle').click(function (e) {
             $('#id01').toggleClass("active"); //you can list several class names 
             e.preventDefault();
         });
